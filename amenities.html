@@ -1,0 +1,241 @@
+<head>
+	<!-- Title and Meta Tags -->
+	<title>Setauket Bed and Breakfast</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="shortcut icon" href="img/sbnbfavicon.ico">
+	
+	<!-- Google web fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+
+	<!-- Linking in stylesheets -->
+	<link rel="stylesheet" href="stylesheets/animate.css">
+	<link rel="stylesheet" href="stylesheets/bootstrap.css">
+	<link rel="stylesheet" href="stylesheets/prettyphoto.css">
+	<link rel="stylesheet" href="stylesheets/revolution.css">
+	<link rel="stylesheet" href="stylesheets/style.css">
+	<link rel="stylesheet" href="stylesheets/font-awesome.min.css">
+</head>
+
+<body>
+	<!-- Render router inside page body -->
+	<!-- Sidebar starts -->
+	<div class="sidebar">
+
+		<!-- Logo starts -->
+		<div class="logo">
+			<h1><a href="{{ pathFor 'homepage' }}">Setauket Bed and Breakfast</a></h1>
+		</div>
+		<!-- Logo ends -->
+
+		<!-- Sidebar-dropdown for Mobile Devices starts -->
+		<div class="sidebar-dropdown">
+			<a href="#">Navigation</a>
+		</div>
+		<!-- Sidebar-dropdown ends -->
+		
+		<!-- Sidebar navigation starts -->
+		<div class="sidey">
+			<ul class="nav nav-pills nav-stacked">
+
+				<!-- Our Home -->
+				<li><a id="homepage" href="index.html"><i class="fa fa-home"></i> Our Home</a></li>
+
+				<!-- Amenities -->
+				<li><a id="amenities" class="active" href="amenities.html"><i class="fa fa-bars"></i> Amenities</a></li>
+
+				<!-- Reservations -->
+				<li><a id="reservations" href="{{ pathFor 'reservations' }}"><i class="fa fa-calendar"></i> Reservations</a></li>
+				
+				<!-- Occasions -->
+				<li><a id="occasions" href="{{ pathFor 'occasions' }}"><i class="fa fa-dashboard"></i> Occasions </a></li>
+
+				<!-- Attractions -->
+				<li><a id="attractions" href="{{ pathFor 'attractions' }}"><i class="fa fa-group"></i> Attractions</a></li>
+
+				<!-- Virtual Tour -->
+				<li><a id="tour" href="{{ pathFor 'tour' }}"><i class="fa fa-film"></i> Virtual Tour</a></li>
+
+				<!-- Contact Us -->
+				<li><a id="contact" href="{{ pathFor 'contact' }}"><i class="fa fa-phone"></i> Contact Us</a></li>
+
+			</ul>               
+		</div>
+		<!-- Sidebar navigation ends -->
+
+		<!-- Sidebar weather starts -->
+		<div id="weather">
+			<!-- Will be rendered through meteor template helper function -->
+		</div>
+		<!-- Sidebar weather ends -->
+
+		<!-- Sidebar weather starts 
+		<div class="sidebar-weather">
+			<div class="sidebar-weather-header">
+				<!-- Title 
+				<h6>New York, Weather</h6>
+			</div>
+			<div class="sweather-left">
+				<!-- Cloud icon 
+				<i class="icon-cloud"></i>
+			</div>
+			<div class="sweather-right">
+				<!-- Weather 
+				<span class="sweather-big">28&deg;C</span>
+			</div>
+			<div class="clearfix"></div>
+			<!-- Footer 
+			<div class="sidebar-weather-footer">
+				<p>Wind : 55 KM/hr - Humidity : 55%</p>
+			</div>
+		</div>
+		-->
+
+	</div>
+	<!-- Sidebar ends -->
+
+	<!-- Mainbar starts -->
+    <div class="mainbar">
+       
+		<!-- Inner page start -->
+		<div class="inner-page">
+			<!-- Inner page header -->
+			<div class="inner-page-header">
+				<div class="container">
+					<!-- Header inner -->
+					<div class="header-inner">
+						<!-- Heading -->
+						<h2>Amenities</h2>
+						<!-- Paragraph -->
+						<p><span class="lblue">&#47;&#47;</span> Enjoy our services</p>
+					</div>
+				</div>
+			</div>
+					
+			<!-- inner page content start -->
+			<div class="inner-page-content inner-careers">
+				<div class="container">
+					<div class="inner-tab">
+						<!-- Nab Bar Tan Menu list -->
+						<ul id="mytab" class="nav nav-tabs">
+							<li class="active"><a href="#one" data-toggle="tab">Dining</a></li>
+							<li><a href="#two" data-toggle="tab">Scenery</a></li>
+							<li><a href="#three" data-toggle="tab">Tea-Time</a></li>
+							<li><a href="#four" data-toggle="tab">What Our Rooms Offer</a></li>
+						</ul>
+						<!-- Content for each menu item -->
+						<div class="tab-content">
+							<!-- First Content for Nav bar -->
+							<div class="tab-pane fade in active" id="one">
+								<h3>Smoditem Poraincidu</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, quaerat, impedit laudantium odit asperiores officiis consectetur a consequatur architecto labore ex fugiat suscipit accusamus dolore nobis amet animi laboriosam deserunt.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, dolore inventore. Praesentium, suscipit, id vero facere ducimus quis maxime cupiditate veritatis necessitatibus quaerat dolorem quisquam unde a blanditiis eaque earum!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, hic, saepe, consectetur, vel fuga nam rerum ducimus fugit eos dicta aliquam recusandae corrupti laboriosam odio eius quod iure facilis ratione.</p>
+							</div>
+							
+							<!-- Second Content for Nav bar -->
+							<div class="tab-pane fade" id="two">
+								<h3>Usdametaut Ficiebit</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet tempore repellendus iure molestias deserunt. Expedita, fugit a optio earum eaque nobis numquam accusantium neque. Veniam dolorem tenetur nulla doloribus aspernatur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, enim, officia, nulla voluptatibus pariatur facere sunt magnam et cumque quas qui reprehenderit accusantium earum dignissimos nobis eveniet molestias sapiente aliquid!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, deserunt, a aliquam minima esse fugiat labore possimus eveniet earum culpa impedit tempore non atque mollitia sed voluptatum laudantium dolore adipisci.</p>
+							</div>
+							
+							<!-- Third Content for Nav bar -->
+							<div class="tab-pane fade" id="three">
+								<h3>Tutufficiis Debit</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, accusamus, dolores nihil amet iusto libero sint at porro sit maxime odio voluptatum dolor. Harum repellendus optio hic numquam vitae accusamus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, odit, quasi architecto nobis sunt fugit corporis eius hic fugiat ullam omnis rerum ut nam labore nisi laboriosam doloremque libero reiciendis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, sequi dolorem eveniet alias nostrum doloribus reiciendis ipsam iure! Nisi, enim debitis animi magnam quos natus cumque repellendus placeat quas perspiciatis.</p>
+							</div>
+
+							<!-- Fourth Content for Nav bar -->
+							<div class="tab-pane fade" id="four">
+								<h3>Tutufficiis Debit</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, accusamus, dolores nihil amet iusto libero sint at porro sit maxime odio voluptatum dolor. Harum repellendus optio hic numquam vitae accusamus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, odit, quasi architecto nobis sunt fugit corporis eius hic fugiat ullam omnis rerum ut nam labore nisi laboriosam doloremque libero reiciendis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, sequi dolorem eveniet alias nostrum doloribus reiciendis ipsam iure! Nisi, enim debitis animi magnam quos natus cumque repellendus placeat quas perspiciatis.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- inner page content end -->
+					
+		</div>
+	   
+		<!-- Inner page end -->
+
+		
+		<!-- Footer Start -->
+
+		<div class="footer">
+			<div class="container">
+				<!-- Footer content -->
+				<div class="footer-content">
+					<div class="row">
+						<!-- Navigation column -->
+						<div class="col-md-4 col-xs-12">
+							<div class="footer-widget">
+								<!-- Heading -->
+								<h5><span><i class="fa fa-puzzle-piece"></i></span> Navigation Menu</h5>
+								<!-- Navigate menu -->
+								<ul class="menu">
+									<li><a href="{{ pathFor 'homepage' }}"><i class="fa fa-home"></i> Our Home</a></li>
+									<li><a href="{{ pathFor 'amenities' }}"><i class="fa fa-bars"></i> Amenities</a></li>
+									<li><a href="{{ pathFor 'reservations' }}"><i class="fa fa-calendar"></i> Reservations</a></li>
+									<li><a href="{{ pathFor 'occasions' }}"><i class="fa fa-dashboard"></i> Occasions </a></li>
+									<li><a href="{{ pathFor 'attractions' }}"><i class="fa fa-group"></i> Attractions</a></li>
+									<li><a href="{{ pathFor 'tour' }}"><i class="fa fa-film"></i> Virtual Tour</a></li>
+									<li><a href="{{ pathFor 'contact' }}"><i class="fa fa-phone"></i> Contact Us</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- Contact column -->
+						<div class="col-md-4 col-xs-12">
+							<div class="footer-widget">
+								<!-- Heading -->
+								<h5><span><i class="fa fa-phone"></i></span> Contact Us</h5>
+								<!-- Email and Phone number -->
+								<p><i class="icon-envelope"></i> <a href="#">fblawebdesign@gmail.com</a><br />
+									<i class="icon-phone"></i> 1 (777) 777-7777</p>
+									<p>That is an actual number, please don't call ;)</p>
+									<p>Let's make twitter page! we can tweet and stuff</p>
+									<p>Ericster, Linagirl, do you guys have twitters?</p>
+								<!-- Social icons -->
+								<div class="social">
+								  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+								  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+								  <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+								  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+							   </div>
+							</div>
+						</div>
+						<!-- Something column -->
+						<div class="col-md-4 col-xs-12">
+							<div class="footer-widget">
+								<!-- Heading -->
+								<h5><span><i class="fa fa-gears"></i></span> Don't know</h5>
+								<!-- Navigate menu -->
+								<ul>
+									<li><a href="#">What we can put</a></li>
+									<li><a href="#">here</a></li>
+									<li><a href="#">but two columns</a></li>
+									<li><a href="#">seemed too empty</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Footer Copyright -->
+				<div class="footer-copyright">
+					<p>Rawr - <a href="#">Ward Melville Website Design Team 2013-2014</a></p>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Footer End -->
+	   
+    </div>
+    <!-- Mainbar ends -->
+
+	<!-- Attaching the javascript in the footer -->
+	<footer>
+		<script src="lib/revolution.js"></script>
+		<script src="lib/weather.js"></script>
+		<script src="lib/bootstrap.js"></script>
+		<script src="lib/plugins.js"></script>
+	</footer>
+</body>

@@ -1,0 +1,123 @@
+<head>
+	<!-- Title and Meta Tags -->
+	<title>Setauket Bed and Breakfast</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="shortcut icon" href="img/sbnbfavicon.ico">
+	
+	<!-- Google web fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+
+	<!-- Linking in stylesheets -->
+	<link rel="stylesheet" href="stylesheets/animate.css">
+	<link rel="stylesheet" href="stylesheets/bootstrap.css">
+	<link rel="stylesheet" href="stylesheets/prettyphoto.css">
+	<link rel="stylesheet" href="stylesheets/revolution.css">
+	<link rel="stylesheet" href="stylesheets/style.css">
+	<link rel="stylesheet" href="stylesheets/font-awesome.min.css">
+</head>
+
+<body>
+	<!-- Render router inside page body -->
+	<!-- Sidebar starts -->
+	<div class="sidebar">
+
+		<!-- Logo starts -->
+		<div class="logo">
+			<h1><a href="{{ pathFor 'homepage' }}">Setauket Bed and Breakfast</a></h1>
+		</div>
+		<!-- Logo ends -->
+
+		<!-- Sidebar-dropdown for Mobile Devices starts -->
+		<div class="sidebar-dropdown">
+			<a href="#">Navigation</a>
+		</div>
+		<!-- Sidebar-dropdown ends -->
+		
+		<!-- Sidebar navigation starts -->
+		<div class="sidey">
+			<ul class="nav nav-pills nav-stacked">
+
+				<!-- Our Home -->
+				<li><a id="homepage" class="active" href="/index.html"><i class="fa fa-home"></i> Our Home</a></li>
+
+				<!-- Amenities -->
+				<li><a id="amenities" href="amenities.html"><i class="fa fa-bars"></i> Amenities</a></li>
+
+				<!-- Reservations -->
+				<li><a id="reservations" href="{{ pathFor 'reservations' }}"><i class="fa fa-calendar"></i> Reservations</a></li>
+				
+				<!-- Occasions -->
+				<li><a id="occasions" href="{{ pathFor 'occasions' }}"><i class="fa fa-dashboard"></i> Occasions </a></li>
+
+				<!-- Attractions -->
+				<li><a id="attractions" href="{{ pathFor 'attractions' }}"><i class="fa fa-group"></i> Attractions</a></li>
+
+				<!-- Virtual Tour -->
+				<li><a id="tour" href="{{ pathFor 'tour' }}"><i class="fa fa-film"></i> Virtual Tour</a></li>
+
+				<!-- Contact Us -->
+				<li><a id="contact" href="{{ pathFor 'contact' }}"><i class="fa fa-phone"></i> Contact Us</a></li>
+
+			</ul>               
+		</div>
+		<!-- Sidebar navigation ends -->
+
+		<!-- Sidebar weather starts -->
+		<div id="weather">
+			<!-- Will be rendered through meteor template helper function -->
+		</div>
+		<!-- Sidebar weather ends -->
+
+		<!-- Sidebar weather starts 
+		<div class="sidebar-weather">
+			<div class="sidebar-weather-header">
+				<!-- Title 
+				<h6>New York, Weather</h6>
+			</div>
+			<div class="sweather-left">
+				<!-- Cloud icon 
+				<i class="icon-cloud"></i>
+			</div>
+			<div class="sweather-right">
+				<!-- Weather 
+				<span class="sweather-big">28&deg;C</span>
+			</div>
+			<div class="clearfix"></div>
+			<!-- Footer 
+			<div class="sidebar-weather-footer">
+				<p>Wind : 55 KM/hr - Humidity : 55%</p>
+			</div>
+		</div>
+		-->
+
+	</div>
+	<!-- Sidebar ends -->
+
+	<!-- Mainbar starts -->
+	<div class="mainbar">
+		<!-- Slider starts -->
+		<div class="slider-wrapper">
+			<!-- Create slides -->
+			<div id="da-slider" class="da-slider">
+				<!-- Slide: Front -->
+					<div class="da-img"><img src="img/sbu.jpg" alt="" /></div>
+				
+				<div class="randomness">
+					<h1>WHY WON"T THIS WORK RAGEQUIT</h1>
+				</div>
+			</div>
+		</div>
+		<!-- end: Slider -->
+		<!-- <img src="img/sbu.jpg" alt=""> -->
+	</div>
+	<!-- Mainbar ends -->
+
+	<!-- Attaching the javascript in the footer -->
+	<footer>
+		<script src="lib/revolution.js"></script>
+		<script src="lib/weather.js"></script>
+		<script src="lib/bootstrap.js"></script>
+		<script src="lib/plugins.js"></script>
+	</footer>
+</body>
